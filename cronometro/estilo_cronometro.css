@@ -16,6 +16,24 @@ main {
     margin: auto;
 }
 
+main nav {
+   text-align: center;
+   margin-bottom: 10px;
+}
+
+main nav a {
+    margin-left: 35px;
+    text-decoration: none;
+    color: #000000;
+}
+
+main nav a:hover {
+    color: #8b0000;
+    text-decoration: overline;
+    text-decoration-color: #ffffff;
+    font-size: 1.2em;
+}
+
 section#cronometro {
     display: flex;
     justify-content: space-between;
