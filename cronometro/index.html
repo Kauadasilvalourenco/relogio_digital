@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../relogio_digital/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo_cronometro.css">
+    <title>Cronômetro</title>
+</head>
+<body>
+    <main>
+        <section id="cronometro">
+            <div id="minutos" class="cronometro">00</div> <p>:</p>
+            <div id="segundos" class="cronometro">00</div> <p>.</p>
+            <div id="milisegundos" class="cronometro">00</div>
+        </section>
+        <section id="botoes">
+            <input type="button" value="⟲" id="botao_reiniciar_cronometro">
+            <input type="button" value="🏁" id="botao_marcar_volta">
+            <input type="button" value="||" id="botao_pausar_cronometro">
+            <input type="button" value="▶" id="botao_iniciar_cronometro">
+        </section>
+        <section id="area_mostrar_volta">
+
+        </section>
+    </main>
+    
+    <script src="codigo_cronometro.js"></script>
+</body>
+</html>
