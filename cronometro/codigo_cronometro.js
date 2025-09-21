@@ -88,6 +88,8 @@ function reiniciarCronometro() {
     cronometro[0].textContent = "00";
     cronometro[1].textContent = "00";
     cronometro[2].textContent = "00";
+    
+    botaoReiniciarCronometro.style.display = "none"
 }
 
 function formatarTempo(tempo) {
