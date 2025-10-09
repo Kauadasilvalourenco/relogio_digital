@@ -66,17 +66,21 @@ function marcarVolta() {
     marcaMilisegundos = cronometro[2].textContent;
 
     tempoVolta = `${marcaMinutos}:${marcaSegundos}.${marcaMilisegundos}`
-    console.log(tempoVolta);
 
     let mostrarVolta = document.createElement("div");
     mostrarVolta.textContent = `${contadorVoltas}° volta: ${tempoVolta}`;
     areaMostrarVolta.appendChild(mostrarVolta);
+    areaMostrarVolta.style.display = "block";
 }
 
 function reiniciarCronometro() {
-    botaoIniciarCronometro.style.display = "block"
-    botaoPausarCronometro.style.display = "none"
-    botaoMarcarVolta.style.display = "none"
+    botaoIniciarCronometro.style.display = "block";
+    botaoPausarCronometro.style.display = "none";
+    botaoMarcarVolta.style.display = "none";
+
+    areaMostrarVolta.innerHTML = "";
+    contadorVoltas = 0;
+    areaMostrarVolta.style.display = "none";
 
     clearInterval(temporizadorID);
     temporizadorID = null;
