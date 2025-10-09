@@ -25,6 +25,7 @@ main nav a {
     margin-left: 35px;
     text-decoration: none;
     color: #000000;
+    transition: all 0.3s ease-in-out;
 }
 
 main nav a:hover {
