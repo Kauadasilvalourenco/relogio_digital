@@ -9,14 +9,27 @@
 </head>
 <body>
     <main>
+        <section id="entrada_dados_temporizador">
+            <label for="entrada_hora">Digite a hora</label>
+            <input type="number" name="entrada_hora" id="entrada_hora">
+            <label for="entrada_minuto">Digite os minutos</label>
+            <input type="number" name="entrada_minuto" id="entrada_minuto">
+            <label for="entrada_segundo">Digite os segundos</label>
+            <input type="number" name="entrada_segundo" id="entrada_segundo">
+        </section>
         <nav>
             <a href="../index.html">Rélogio Digital</a>
             <a href="../cronometro/cronometro.html">Cronômetro</a>
         </nav>
-        <section>
+        <section id="display_temporizador">
             <div id="hora">00</div> <p>:</p>
             <div id="minutos">00</div> <p>:</p>
             <div id="segundos">00</div>
+        </section>
+        <section id="botoes">
+            <input type="button" value="⏹" id="botao_parar_temporizador">
+            <input type="button" value="||" id="botao_pausar_temporizador">
+            <input type="button" value="▶" id="botao_iniciar_temporizador">
         </section>
     </main>
 </body>

@@ -6,14 +6,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 95vh;
+    width: 99vw;
+    height: 96vh;
     background-color: #5ab4ec;
     font-family: 'Audiowide';
 }
 
 main {
     margin: auto;
-    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 98vh;
 }
 
 main nav {
@@ -41,7 +47,22 @@ section {
     align-items: center;
 }
 
-section div {
+section p {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+section#entrada_dados_temporizador {
+    flex-direction: column;
+    margin-bottom: auto;
+}
+
+section#display_temporizador {
+    width: 500px;
+    margin-bottom: 50px;
+}
+
+section#display_temporizador div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,15 +73,30 @@ section div {
     font-size: 1.5em;
 }
 
-section p {
-    font-weight: bold;
-    font-size: 2em;
-}
-
 section div#hora {
     margin-left: 50px;
 }
 
 section div#segundos {
     margin-right: 50px;
+}
+
+section#botoes {
+    margin-bottom: auto;
+}
+
+section#botoes input {
+    width: 100px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+input#botao_parar_temporizador {
+    display: none;
+}
+
+input#botao_pausar_temporizador {
+    display: none;
 }
